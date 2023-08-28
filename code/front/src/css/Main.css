@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+.main,input,button{
+  font-family: 'Nanum Pen Script', cursive;
+}
+
+.book {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url(../img/wood.jpg)center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#pageSection {
+  position: fixed;
+  width: 390px;
+  height: 844px;
+  perspective: 1000px;
+} 
+
+@media (min-width:500px){
+  .book {
+    position: fixed;
+    width: 100%;
+    height:100%;
+    background: url(../img/wood.jpg)center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+  #pageSection {
+    position: absolute;
+    width: 65vh;
+    height: 49vw;
+    left: 50%;
+    transform: translateX(-50%);
+    perspective: 1000px;
+  } 
+
+  #page1 {
+    background: url(../img/menu.jpg) center center no-repeat;
+    background-size: auto 100%; 
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 3;
+    transform-origin: left center;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+  }
+
+  
+  .page h1{
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: wheat;
+  }
+
+}
+
+@media (min-width:900px){
+  .book {
+    position: fixed;
+    width: 100%;
+    height:100%;
+    background: url(../img/wood.jpg)center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+  #pageSection {
+    position: absolute;
+    width: 65vh;
+    height: 49vw;
+    left: 50%;
+    transform: translateX(-50%);
+    perspective: 1000px;
+  } 
+
+  #page1 {
+    background: url(../img/menu.jpg) center center no-repeat;
+    background-size: auto 100%; 
+    background-attachment: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 3;
+    transform-origin: left center;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+  }
+
+  
+  .page h1{
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    color: wheat;
+  }
+
+}
+
+
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4), -2px 0 2px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+
+#login{
+  position: fixed;
+  top: 19%;
+  left: 80%;
+  color: white;
+  background-color: transparent;
+  border: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.page h1{
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: wheat;
+}
+
+#page1 {
+  background: url(../img/menu.jpg)center center no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  transform-origin: left center;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+}
+
+#next{
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: transparent;
+  border: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  
+}
+
+#page2 {
+  background: url(../img/menu_in.jpg)center center no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transform-origin: left center;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+}
+
+#page2 input{
+  background-color: transparent;
+  border: none;
+}
+
+#page2 input::placeholder{
+  text-align: center;
+}
+
+#page2 input:nth-of-type(1){
+  position: fixed;
+  top: 31%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#page2 input:nth-of-type(2){
+  position: fixed;
+  top: 46%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#home{
+  position: fixed;
+  top: 19%;
+  left: 9%;
+  color: black;
+  background-color: transparent;
+  border: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#result{
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  background-color: transparent;
+  border: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#page2 h2:nth-of-type(1){
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#page2 h2:nth-of-type(2){
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#page3{  
+  background: url(../img/menu_in.jpg)center center no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transform-origin: left center;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+}
+
+#page3 input{
+  background-color: transparent;
+  border: none;
+}
+
+#page3 h2:nth-of-type(1){
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#page3 h2:nth-of-type(2){
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#page3 label:nth-of-type(1){
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#page3 label:nth-of-type(2){
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#page3 input:nth-of-type(1){
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#page3 input:nth-of-type(2){
+  position: fixed;
+  top: 46%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#page3 #btnlogin{
+  position: fixed;
+  color: black;
+  background-color: transparent;
+  border: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#page3 #btnreg{
+  position: fixed;
+  color: black;
+  background-color: transparent;
+  border: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  top: 19%;
+  right: 9%;
+}
+
+#page4{  
+  background: url(../img/menu_in.jpg)center center no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  transform-origin: left center;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+}
+
+.inf{
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  border: transparent;
+}
+
+.inf input{
+  display: grid;
+
+  background-color: transparent;
+  border: none;
+}
+
+.inf button{
+  position: fixed;
+  color: black;
+  background-color: transparent;
+  border: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
